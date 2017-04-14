@@ -1,0 +1,47 @@
+md-toolbar {
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+}
+
+/deep/ md-toolbar-row {
+  justify-content:space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1 .light {
+  font-weight: 100;
+}
+
+button.active {
+  background-color: rgba(0,0,0, 0.3);
+}
+
+/deep/ div.mat-card-header-text {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+md-card {
+  width:500px;
+  background: rgba(255,255,255,0.9);
+}
+
+md-card-header {
+  color: #3f51b5;
+}
+
+.fullBg {
+  z-index:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

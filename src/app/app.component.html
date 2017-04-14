@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary" class="mat-elevation-z24">
+  <h1><span class="light">SUPER</span>LOGO</h1>
+  <div>
+    <button md-button [ngClass]="{'active':isCurrentPage('home')}" (click)="setCurrentPage('home')">HOME</button>
+    <button md-button [ngClass]="{'active':isCurrentPage('about')}" (click)="setCurrentPage('about')">ABOUT</button>
+    <button md-button [ngClass]="{'active':isCurrentPage('contact')}" (click)="setCurrentPage('contact')">CONTACT</button>
+  </div>
+</md-toolbar>
+
+<img class="fullBg" *ngIf="isCurrentPage('home')" src="assets/bg00.jpg">
+<img class="fullBg" *ngIf="isCurrentPage('about')" src="assets/bg01.jpg">
+<img class="fullBg" *ngIf="isCurrentPage('contact')" src="assets/bg02.jpg">
+
+<div class="content">
+  <md-card>
+    <md-card-header>
+      <md-card-title><h1>{{page.label}}</h1></md-card-title>
+      <md-card-subtitle>{{page.sublabel}}</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+      <p>{{page.content}}</p>
+    </md-card-content>
+  </md-card>
+</div>
