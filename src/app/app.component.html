@@ -1,10 +1,9 @@
 <md-toolbar color="primary" class="mat-elevation-z24">
   <h1><span class="light">SUPER</span>LOGO</h1>
-  <div>
-    <button md-button [ngClass]="{'active':isCurrentPage('home')}" (click)="setCurrentPage('home')">HOME</button>
-    <button md-button [ngClass]="{'active':isCurrentPage('about')}" (click)="setCurrentPage('about')">ABOUT</button>
-    <button md-button [ngClass]="{'active':isCurrentPage('contact')}" (click)="setCurrentPage('contact')">CONTACT</button>
-  </div>
+  <span class="spacer"></span>
+  <button md-button [ngClass]="{'active':isCurrentPage('home')}" (click)="setCurrentPage('home')">HOME</button>
+  <button md-button [ngClass]="{'active':isCurrentPage('about')}" (click)="setCurrentPage('about')">ABOUT</button>
+  <button md-button [ngClass]="{'active':isCurrentPage('contact')}" (click)="setCurrentPage('contact')">CONTACT</button>
 </md-toolbar>
 
 <img class="fullBg" fullpage *ngIf="isCurrentPage('home')" src="assets/bg00.jpg">

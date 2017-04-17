@@ -12,7 +12,7 @@ export class FullpageDirective {
     this.resize();
   }
 
-  @HostListener('window:load', ['$event'])
+  @HostListener('load', ['$event'])
   onLoad(event) {
     this.resize();
   }
