@@ -7,10 +7,12 @@ import { MdButtonModule, MdCardModule, MdToolbarModule } from '@angular/material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { FullpageDirective } from './fullpage.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FullpageDirective
   ],
   imports: [
     BrowserModule,

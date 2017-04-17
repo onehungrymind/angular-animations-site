@@ -4,7 +4,7 @@ md-toolbar {
   overflow-x: auto;
 }
 
-/deep/ md-toolbar-row {
+md-toolbar-row {
   justify-content:space-between;
 }
 
@@ -20,7 +20,7 @@ button.active {
   background-color: rgba(0,0,0, 0.3);
 }
 
-/deep/ div.mat-card-header-text {
+div.mat-card-header-text {
   margin: 0;
 }
 
