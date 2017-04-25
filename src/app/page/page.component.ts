@@ -10,11 +10,11 @@ import { ContentService } from '../shared/services/content.service';
 export class PageComponent implements OnInit {
   page: Object;
 
-  constructor(private route: ActivatedRoute, private contentService: ContentService) {
-    this.page = this.contentService.pages[this.route.snapshot.data['page']];
-  }
+  constructor(private route: ActivatedRoute,
+              private contentService: ContentService) { }
 
   ngOnInit() {
-    console.log('PAGE', this.page);
+    const pageData = this.route.snapshot.data['page'];
+    this.page = this.contentService.pages[pageData];
   }
 }
